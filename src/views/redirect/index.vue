@@ -10,14 +10,14 @@ let { redirect } = query
 Reflect.deleteProperty(query, 'redirect')
 
 if (Array.isArray(redirect)) {
-  redirect = redirect.join('/')
+	redirect = redirect.join('/')
 }
 if (redirect.startsWith('/redirect')) {
-  redirect = '/'
+	redirect = '/'
 }
 
 replace({
-  path: redirect.startsWith('/') ? redirect : '/' + redirect,
-  query,
+	path: redirect.startsWith('/') ? redirect : '/' + redirect,
+	query,
 })
 </script>

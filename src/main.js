@@ -7,13 +7,13 @@ import { setupStore } from '@/store'
 import App from './App.vue'
 
 function setupApp() {
-  const app = createApp(App)
+	const app = createApp(App)
 
-  setupStore(app)
+	setupStore(app)
 
-  setupRouter(app)
+	setupRouter(app)
 
-  app.mount('#app')
+	app.mount('#app')
 }
 
 setupApp()

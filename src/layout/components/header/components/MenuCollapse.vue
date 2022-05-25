@@ -1,8 +1,8 @@
 <template>
-  <n-icon size="20" style="cursor: pointer" @click="appStore.switchCollapsed">
-    <IconMenuExpand v-if="appStore.collapsed" />
-    <IconMenuCollapse v-else />
-  </n-icon>
+	<n-icon size="20" style="cursor: pointer" @click="appStore.switchCollapsed">
+		<IconMenuExpand v-if="appStore.collapsed" />
+		<IconMenuCollapse v-else />
+	</n-icon>
 </template>
 
 <script setup>

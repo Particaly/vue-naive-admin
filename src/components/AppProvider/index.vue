@@ -1,19 +1,19 @@
 <template>
-  <n-config-provider :theme-overrides="useTheme.naiveThemeOverrides">
-    <n-loading-bar-provider>
-      <LoadingBar />
-      <n-dialog-provider>
-        <DialogContent />
-        <n-message-provider>
-          <MessageContent />
-          <n-notification-provider>
-            <NotificationContent />
-            <slot></slot>
-          </n-notification-provider>
-        </n-message-provider>
-      </n-dialog-provider>
-    </n-loading-bar-provider>
-  </n-config-provider>
+	<n-config-provider :theme-overrides="useTheme.naiveThemeOverrides">
+		<n-loading-bar-provider>
+			<LoadingBar />
+			<n-dialog-provider>
+				<DialogContent />
+				<n-message-provider>
+					<MessageContent />
+					<n-notification-provider>
+						<NotificationContent />
+						<slot></slot>
+					</n-notification-provider>
+				</n-message-provider>
+			</n-dialog-provider>
+		</n-loading-bar-provider>
+	</n-config-provider>
 </template>
 
 <script setup>

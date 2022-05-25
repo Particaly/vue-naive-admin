@@ -1,10 +1,10 @@
 <template>
-  <router-link to="/" class="logo">
-    <n-icon size="36" color="#316c72">
-      <IconLogo />
-    </n-icon>
-    <n-gradient-text v-show="!appStore.collapsed" type="primary">{{ title }}</n-gradient-text>
-  </router-link>
+	<router-link to="/" class="logo">
+		<n-icon size="36" color="#316c72">
+			<IconLogo />
+		</n-icon>
+		<n-gradient-text v-show="!appStore.collapsed" type="primary">{{ title }}</n-gradient-text>
+	</router-link>
 </template>
 
 <script setup>
@@ -17,17 +17,17 @@ const appStore = useAppStore()
 
 <style lang="scss" scoped>
 .logo {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .n-gradient-text {
-    margin-left: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    max-width: 140px;
-    flex-shrink: 0;
-    white-space: normal;
-  }
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.n-gradient-text {
+		margin-left: 15px;
+		font-size: 16px;
+		font-weight: bold;
+		max-width: 140px;
+		flex-shrink: 0;
+		white-space: normal;
+	}
 }
 </style>
